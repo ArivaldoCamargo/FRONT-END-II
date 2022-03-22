@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALCULADORA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="gridContainer">
+        <header class="gridItem header">
+            <h1>CALCULADORA EQUIPE 3</h1>
+
+        </header>
+
+        <main class="gridItem main">
+            <div class="calcula">
+                <img src="./imagens/calculadora.jpg" width="" alt="" />
+            </div>
+            <h1 class="titulo">CALCULADORA-OPERAÇÕES BÁSICAS</h1>
+            <h2 class="subtitulo">ESTA CALCULADORA BÁSICA EFETUA AS 4 PRINCIPAIS OPERAÇÕES MATEMÁTICAS</h2>
+
+            <div class="botao">
+                <button class="adicao" type=" button" onclick="adicionar()">ADIÇÃO</button>
+                <button class="subtracao" type="button " onclick="subtracao() ">SUBTRAÇÃO</button>
+                <button class="multiplicacao" type="button " onclick="multiplicacao() ">MULTIPLICAÇÃO</button>
+                <button class="divisao" type="button " onclick="divisao() ">DIVISÃO</button>
+            </div>
+
+
+        </main>
+
+
+        <aside class="gridItem aside lateral">
+            <div class="operacoes">
+                <div class="imagem">
+                    <img src="./imagens/calculadora fita.jpg" alt="" />
+
+                    <img src="./imagens/soma.jpg" alt="" />
+                    <button class="adicao" type=" button " onclick="adicionar()">ADIÇÃO</button>
+                </div>
+                <div class=" descricao ">
+                    <p class="texto ">ADIÇÃO - ESTA OPERAÇÃO MATEMÁTICA CALCULA A ADIÇÃO ENTRE DOIS NÚMEROS INFORMADOS
+                        PELO USUÁRIO</p>
+                </div>
+            </div>
+            <div class="operacoes ">
+                <div class="imagem ">
+                    <img src="./imagens/hp 48 g.jpg " alt=" " />
+                    <img src="./imagens/subtracao.png " alt=" " />
+                    <button class="subtracao" type="button " onclick="subtracao() ">SUBTRAÇÃO</button>
+                </div>
+                <div class="descricao ">
+                    <p class="texto ">SUBTRAÇÃO - ESTA OPERAÇÃO MATEMÁTICA CALCULA A SUBTRAÇÃO ENTRE DOIS NÚMEROS
+                        INFORMADOS PELO USUÁRIO</p>
+
+                </div>
+            </div>
+            <div class="operacoes ">
+                <div class="imagem ">
+                    <img src="./imagens/hp12 c.jpg " alt=" " />
+                    <img src="./imagens/multiplicacao.png " alt=" " />
+                    <button class="multiplicacao" type="button " onclick="multiplicacao() ">MULTIPLICAÇÃO</button>
+                </div>
+                <div class="descricao ">
+                    <p class="texto ">MULTIPLICAÇÃO - ESTA OPERAÇÃO MATEMÁTICA CALCULA A MULTIPLICAÇÃO ENTRE DOIS
+                        NÚMEROS INFORMADOS PELO USUÁRIO</p>
+                </div>
+
+            </div>
+            <div class="operacoes ">
+                <div class="imagem ">
+                    <img src="./imagens/calculadora fita.jpg " alt=" " />
+                    <img src="./imagens/divisao.jpg " alt=" " />
+                    <button class="divisao" type="button " onclick="divisao() ">DIVISÃO</button>
+                </div>
+                <div class="descricao ">
+                    <p class="texto ">DIVISÃO - ESTA OPERAÇÃO MATEMÁTICA CALCULA A DIVISÃO ENTRE DOIS NÚMEROS
+                        INFORMADOS PELO USUÁRIO</p>
+                </div>
+            </div>
+        </aside>
+        <footer class="container">
+            <p class="float-right"><a href="#">Voltar ao topo</a></p>
+            <p>&copy; Alunos de FRONTEND II &middot; <a href="#">Professor </a> &middot; <a href="#">Marcos</a>&middot; <a href="https://www.digitalhouse.com/br/">Escola Digital House</a></p>
+          </footer>
+    </div>
+
+    <script src="./script/adicao.js"></script>
+    <script src="./script/multiplicacao.js "></script>
+    <script src="./script/subtracao.js "></script>
+    <script src="./script/divisao.js "></script>
+
+    <script src="./script/script.js "></script>
+
+</body>
+
+
+</html>
