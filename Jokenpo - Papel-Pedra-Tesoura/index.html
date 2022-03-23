@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokenpô</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header id="header">
+        <img src="img/banner.jpg" alt="pedra papel tesoura">
+        <h1>Jokenpô - Papel, Pedra, Tesoura</h1>
+    </header>
+    <section>
+    <div class="container">
+        <p>Olá! Você conhece o Jokenpô? É um jogo bem antigo que tem sua origem na China mas foi no Japão que recebeu esse
+            nome “Jokenpô” e se popularizou para o mundo todo. Aqui em nosso país é conhecida como Pedra, Papel ou
+            Tesoura.</p>
+            <p><span>Como Jogar:</span> Selecione um opção abaixo e clique em jogar </p>
+            <p>Pedra ganha de Tesoura<br>
+               Tesoura ganha de Papel<br>
+               Papel ganha de Pedra</p> 
+        <div>
+</section>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+                        <div class="jogador">
+                            <h2>Jogador: </h2>
+                            <div class="icones">
+                                <img src="img/papel.png" width="100px" alt="Papel">
+                                <img src="img/pedra.png" width="100px" alt="Pedra">
+                                <img src="img/tesoura.png" width="100px" alt="Tesoura">
+                            </div>
+                            <form name="frmjogo">
+                                <input type="radio" class="form-radio" name="grupo" id="papel" value="papel"><label
+                                    for="papel">Papel</label>
+
+                                <input type="radio" class="form-radio" name="grupo" id="pedra" value="pedra"><label
+                                    for="pedra">Pedra</label>
+
+                                <input type="radio" class="form-radio" name="grupo" id="tesoura" value="tesoura"><label
+                                    for="tesoura">Tesoura</label>
+
+                                <p>
+                                    <button type="button" class="btn btn-primary btn-md" value="JOGAR"
+                                        onclick="jogar()">JOGAR</button>
+
+                                    <button type="reset" class="btn btn-primary btn-md" value="Reset"
+                                        onclick="Reset()">LIMPAR</button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6 col-sm-12 ">
+
+                        <div class="computador">
+                            <h2>Computador:</h2>
+                            <img src="img/computador.png" width="300px" alt="computador" id="pc">
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="resultado">
+                            <h3 id="placar"></h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="GANHADOR">
+                          <h2>Campeão:</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script src="JS/ppt.js"></script>
+
+</body>
+<footer>
+    <div class="rodape">
+
+    </div>
+</footer>
+
+</html>
